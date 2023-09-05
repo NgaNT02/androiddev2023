@@ -12,13 +12,13 @@ public class WeatherActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_weather);
+        setContentView(R.layout.activity_weather);
         // Create a new Fragment to be placed in the activity
-        // ForecastFragment firstFragment = new ForecastFragment();
+        ForecastFragment firstFragment = new ForecastFragment();
         // Add the fragment to the 'container' FrameLayout
-        // getSupportFragmentManager().beginTransaction().add(
-        //      R.id.container, firstFragment
-        //).commit();
+        getSupportFragmentManager().beginTransaction().add(
+              R.id.container, firstFragment
+        ).commit();
         Log.i(TAG,"onCreate: This is a log message.");
     }
 
